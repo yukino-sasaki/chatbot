@@ -9,7 +9,6 @@ import noprofile from '../../assets/img/profile_icon.png'
 
 
 const Chat = (props) => {
-    console.log(props)
     //props.typeの真偽地をisquestionに入れる
     const isQuestion = (props.type === 'question')
     // const classes = isQuestion ? Style.p_chat__row : Style.p_chat__reverse

@@ -22,7 +22,7 @@ const useStyles = makeStyles(() =>
 );
 const Answer = (props) => {
     const classes = useStyles()
-    console.log(makeStyles)
+
 
     return (
         <div>

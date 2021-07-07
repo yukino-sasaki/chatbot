@@ -5,10 +5,12 @@ import Swal from 'sweetalert2';
 import emailjs from 'emailjs-com';
 
 const SERVICE_ID = 'service_lfa59xn';
-const TEMPLATE_ID = "template_31dmrvm";
+const TEMPLATE_ID = 'template_31dmrvm';
 const USER_ID = "user_BnqIrezQIi1dpcwqP97NF";
 
-const EmailForm = () => {
+const EmailForm = (props) => {
+
+
 
     const handleOnSubmit = (e) => {
         e.preventDefault();
@@ -30,7 +32,7 @@ const EmailForm = () => {
         e.target.reset()
     };
     return (
-        <div className={Style.App}>
+        <div className={props.open ? Style.App : Style.close}>
             <Form onSubmit={handleOnSubmit}>
                 <Form.Field
                     id='form-input-control-email'
@@ -61,6 +63,8 @@ const EmailForm = () => {
                     required
                 />
                 <Button type="submit" color="green">Submit</Button>
+                <Button color="grey" onClick={props.handleClose}>Cancel</Button>
+
             </Form>
         </div >
     );

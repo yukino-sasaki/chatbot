@@ -3,8 +3,14 @@
   max-width: 300px;
   margin: 20px auto;
 }
-Form {
-  border: 1px solid lightgray;
-  border-radius: 10px;
-  padding: 20px;
+  Form {
+      border: 1px solid lightgray;
+      border-radius: 10px;
+      padding: 20px;
+      background-color: white;
+      z-index:10;
+    }
+
+.close{
+    display: none;
 }
